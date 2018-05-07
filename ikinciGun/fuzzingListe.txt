@@ -1,0 +1,3 @@
+hacktrick
+blackbox
+xss/example1.php?name=hacker
