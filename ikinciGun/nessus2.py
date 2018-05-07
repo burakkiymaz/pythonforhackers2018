@@ -1,7 +1,7 @@
 import requests
 import vulndb
 sozluk={"172.19.20.128":"172.217.169.142"}
-header={"X-ApiKeys": "accessKey=6945e0aff46195ea7b249622842bf4c94be121eba140dda8e1c2b6457f1c1555; secretKey=7dc3a4e6ccd0e33ed76affad113f27f32c3accc72993fb3336a274be47d55858;"}
+header={"X-ApiKeys": "ApiKeys"}  # Buraya Nessus dan alınan ApiKey yazılacak
 url="https://127.0.0.1:8834/scans"
 sonuc=requests.get(url=url,headers=header,verify=False)
 for i in sonuc.json()['scans']:
